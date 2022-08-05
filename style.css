@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: flex-start;
+  }
+
+header {
+    display: flex;
+    /* Defines how to distribute the empty space between child elements */
+    justify-content: space-between;
+    padding: 30px;
+    background: #13293d;
+    color: #fff;  
+    margin-bottom: 2%;
+}
+
+header h1 {
+    color: #fff;
+    padding: 14px 20px;
+    text-align: center;
+    font-size: 200%;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 7%;
+  }
+
+nav a {
+    color: #fff;
+    padding: 14px 20px;
+    text-align: center;
+}
