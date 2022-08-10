@@ -1,9 +1,6 @@
-:root {
-}
-
+/*Display settings for body of page*/
 body {
   margin: 5% 15% 7% 15%;
-  max-width: 992px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -12,6 +9,7 @@ body {
   background-attachment: fixed;
   }
 
+/*Display settings for main header*/
 header {
   display: flex;
   flex-direction: column;
@@ -21,38 +19,83 @@ header {
   height: 125px;
 }
 
+/*Display settings for h1 "Autumn Legere*/
 header h1 {
   text-align: center;
   font-size: 250%;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-a {
-  filter: saturate(30%);
-  color: rgb(48, 48, 48);
-  text-decoration: none;
-}
-
-img {
-  filter: drop-shadow(10px 10px 4px grey);
-}
-
+/*Display settings for navigation bar*/
 nav {
   display: flex;
   justify-content: flex-end;
 }
 
+/*Display settings for all anchors on page*/
+a {
+  filter: saturate(0%);
+  color: rgb(48, 48, 48);
+  text-decoration: none;
+}
+
+/*Display settings for navigation bar anchors*/
 nav a {
   margin: 20px;
   padding: 10px;
   text-align: center;
 }
 
+/*Display settings for navigation bar anchors when you hover over them*/
+nav a:hover {
+  border: solid;
+  border-radius: 25%;
+  border-color: rgb(80, 108, 154);
+  color: rgb(65, 90, 131);
+  padding: 7px;
+}
+
+/*Display settings for main section of page*/
 main {
   display: flex;
   flex-direction: column;
 }
 
+/*Display settings for all h2's*/
+h2 {
+  display: flex;
+  justify-content: center;
+  font-size: 150%;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: rgba(240, 248, 255, 0.34);
+  height: 70px;
+  align-items: center;
+  margin: 10% -22% 2% -22%;
+  }
+
+/*Shadow setting for all images on page*/
+img {
+  filter: drop-shadow(10px 10px 4px grey);
+}
+
+/*Display settings for first and largest previous work link*/
+#big {
+  text-align: center;
+  width:100%;
+  position: relative;
+}
+
+/*Display setting for anchor in first previous work link*/
+#big a {
+  display: flex;
+}
+
+/*Display setting for image in first previous work link*/
+#big img {
+  width:100%;
+}
+
+/*Display settings for section containing smaller, side-by-side previous work links*/
 .content {
 display: flex;
 border-spacing: 5px;
@@ -60,31 +103,26 @@ justify-content: space-between;
 margin-top: 2%;
 }
 
-h2 {
-display: flex;
-justify-content: center;
-font-size: 150%;
-font-family: Georgia, 'Times New Roman', Times, serif;
-background-color: rgba(240, 248, 255, 0.34);
-height: 70px;
-align-items: center;
-margin: 10% -22% 2% -22%;
-}
-
-#big {
-  text-align: center;
-  width:100%;
-  position: relative;
-  }
-  
-#big img {
-  width:100%;
-}
-
-#big a {
+/*Display setting for anchors in content section*/
+.content a {
   display: flex;
 }
 
+/*Display setting for images in content section*/
+.content img {
+  width:100%;
+}
+
+/*Display settings for each link to previous work in content section*/
+.work {
+  width: 50%;
+  display: flex;
+  width: 49%;
+  position: relative;
+  text-align: center;
+}
+
+/*Display settings for wording over image in previous work links*/
 a p {
   position: absolute;
   top: 80%;
@@ -96,18 +134,75 @@ a p {
   width: 100%;
 }
 
+/*Display settings for anchors when you hover over them. Applied to all anchors but mainly used for large picture links to previous work*/
 a:hover {
   filter: saturate(100%);
 }
 
-nav a:hover {
-  border: solid;
-  border-radius: 25%;
-  border-color: rgb(80, 108, 154);
-  color: rgb(65, 90, 131);
-  padding: 7px;
+/*Display settings for first about me section*/
+.aboutfam {
+  margin-top: 2%;
+  display:flex;
+  align-items: center;
+  line-height: 1.5;
 }
 
+/*Size setting for image in first about me section*/
+.aboutfam img {
+  width:49%;
+}
+
+/*Margin setting for wording in first about me section*/
+.aboutfam p {
+  margin: 3% 0% 3% 5%;
+}
+
+/*Display settings for second about me section*/
+.aboutpro {
+  margin-top: 2%;
+  display:flex;
+  align-items: center;
+  line-height: 1.5;
+}
+/*Size setting for image in second about me section*/
+.aboutpro img {
+  width:49%;
+}
+
+/*Margin setting for wording in second about me section*/
+.aboutpro p {
+  margin: 3% 3% 3% 0%;
+}
+
+/*Display settings for contact information section*/
+.contact {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5%;
+  justify-content: center;
+}
+
+/*Display settings for wording in contact information section*/
+.contact p {
+  margin: 3%;
+  text-align: center;
+  line-height: 1.5;
+}
+
+/*Display settings for links in contact information section*/
+.contactlinks {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  align-items: center;
+}
+
+/*Padding setting for links in contact information section. This setting is separate so the links don't move when you hover over them.*/
+.contactlinks a {
+  padding: 10px;
+}
+
+/*Display settings for contact links when you hover over them.*/
 .contactlinks a:hover {
   border: solid;
   border-radius: 25%;
@@ -116,125 +211,84 @@ nav a:hover {
   padding: 7px;
 }
 
-.work {
-  width: 50%;
-  display: flex;
-  width: 49%;
-  position: relative;
-  text-align: center;
-}
-
-.content a {
-  display: flex;
-}
-
-.content img {
-  width:100%;
-}
-
-.aboutfam {
-  margin-top: 2%;
-  display:flex;
-  align-items: center;
-  line-height: 1.5;
-}
-
-.aboutfam img {
-  width:49%;
-}
-
-.aboutfam p {
-  margin: 3% 0% 3% 5%;
-}
-
-.aboutpro {
-  margin-top: 2%;
-  display:flex;
-  align-items: center;
-  line-height: 1.5;
-}
-
-.aboutpro p {
-  margin: 3% 3% 3% 0%;
-}
-
-.aboutpro img {
-  width:49%;
-}
-
-.contact {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 5%;
-  justify-content: center;
-}
-
-.contact p {
-  margin: 3%;
-  text-align: center;
-}
-
-.words {
-  line-height: 1.5;
-}
-
-.contactlinks {
-  display: flex;
-  justify-content: space-evenly;
-  width: 100%;
-  align-items: center;
-}
-
-.contactlinks a {
-  padding: 10px;
-}
 
 
-@media screen and (max-width: 992px) {
-  header,
-  h1  {
-    font-size: 68%;
+
+
+/*Changes font size of wording over previous work links when screen size is less than 1030px*/
+@media screen and (max-width: 1030px) {
+  a p {
+    font-size: 90%;
   }
+}
 
-@media screen and (max-width: 768px) {
-
-  .contactlinks {
-    flex-direction: column;
-  }
+/*Changes about me section images and wording to column format with aesthetic adjustments to their layout when screen size is less than 950px*/
+@media screen and (max-width: 950px) {
 
   .aboutfam {
     flex-direction: column;
   }
 
+  .aboutfam p {
+    margin: 5% 0% 0% 0%;
+  }
+
   .aboutfam img {
     margin-top: 2%;
+    width: 90%;
   }
 
   .aboutpro {
     flex-direction: column;
   }
 
+  .aboutpro p {
+    margin: 2% 0% 5% 0%;
+  }
+
   .aboutpro img {
     margin-top: 2%;
-  }
-
-  header {
-    flex-direction: column;
-  }
-
-  header,
-  h1  {
-    font-size: 40%;
+    width: 90%;
   }
 
 }
 
-@media screen and (max-width: 400px) {
-  .contact {
+/*Changes to page design when screen size is less than 768px*/
+@media screen and (max-width: 768px) {
+
+/*2 smaller previous work links in column instead of row*/
+  .content {
     flex-direction: column;
-    width: 100%;
+    align-items: center;
   }
+
+/*Adjust size and margin of smaller work links. Separate from previous element in order to target the links individually.*/
+  .work {
+    width: 90%;
+    margin-bottom: 2%;
+  }
+
+  /*Contact links in column instead of row*/
   .contactlinks {
-    width: 100%;
+    flex-direction: column;
   }
 }
+
+/*Changes to page design when screen size is less than 500px*/
+  @media screen and (max-width: 500px) {
+    
+    /*Changes font size of heading "Autumn Legere*/
+    header h1 {
+      font-size: 150%;
+    }
+
+    /*Changes font size of all h2's*/
+    h2 {
+      font-size: 100%;
+    }
+    
+    /*Changes font size of wording over previous work links*/
+    a p {
+      font-size: 50%;
+    }
+  }
