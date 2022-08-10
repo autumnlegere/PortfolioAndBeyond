@@ -17,10 +17,11 @@ This screenshot of the web page was taken using chrome devtools. The background 
 
 I used snipets of code from the following websites:
 
-Code for a Fixed Gradient Background: Answer given by Bryan Downing
-[Stack Overflow](https://stackoverflow.com/questions/2869212/css3-gradient-background-set-on-body-doesnt-stretch-but-instead-repeats)
+- Code for a Fixed Gradient Background: Answer given by Bryan Downing <br>
 
-Code for Placing Text on Top of and Image
-[W3Schools](https://www.w3schools.com/howto/howto_css_image_text.asp)
+    - [Stack Overflow](https://stackoverflow.com/questions/2869212/css3-gradient-background-set-on-body-doesnt-stretch-but-instead-repeats)
+
+- Code for Placing Text on Top of and Image <br>
+    - [W3Schools](https://www.w3schools.com/howto/howto_css_image_text.asp)
 
 The rest of the code you see is either original or taken from the University of Arizona's Coding Bootcamp activities.
