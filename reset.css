@@ -1,3 +1,4 @@
+/*Universal display settings for entire page to over-ride default browser settings*/
 * {
     margin: 0;
     padding: 0;
@@ -6,26 +7,31 @@
     font-family:Arial, Helvetica, sans-serif;
   }
   
+/*Height setting for entire code to over-ride default browser setting*/
   html {
     height: 100%;
   }
   
+/*Display settings for main body to over-ride default browser settings*/
   body {
     min-height: 100%;
     line-height: 1;
     font-family: sans-serif;
   }
   
+/*Font size for all headings to over-ride default browser setting*/
   h1, h2, h3, h4, h5, h6 {
     font-size: 100%;
   }
   
+/*Font settings for listed elements to over-ride default browser setting*/
   input, select, option, optgroup, textarea, button,
   pre, code {
     font-size: 100%;
     font-family: inherit;
   }
   
+/*Resets style settings for lists to over-ride default browser setting*/
   ol, ul {
     list-style: none;
   }
